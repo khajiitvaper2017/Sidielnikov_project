@@ -234,44 +234,6 @@ else:
 # ## Організація циклів за допомогою `while`
 
 # %% [markdown]
-# __Приклад__
-# 
-# Програма, яка читає послідовність чисел і підраховує, скільки чисел є парними, а скільки непарними. Програма завершується після введення нуля.
-
-# %%
-odd_numbers = 0
-even_numbers = 0
-
-# Read the first number.
-number = int(input("Enter a number or type 0 to stop: "))
-
-# 0 terminates execution.
-while number != 0:
-    # Check if the number is odd.
-    if number % 2 == 1:
-        # Increase the odd_numbers counter.
-        odd_numbers += 1
-    else:
-        # Increase the even_numbers counter.
-        even_numbers += 1
-    # Read the next number.
-    number = int(input("Enter a number or type 0 to stop: "))
-
-# Print results.
-print("Odd numbers count:", odd_numbers)
-print("Even numbers count:", even_numbers)
-
-# %% [markdown]
-# Виход із циклу може бути оптімізовано за рахунок використання змінної `counter` наступним чином.
-
-# %%
-counter = 5
-while counter:
-    print("Inside the loop.", counter)
-    counter -= 1
-print("Outside the loop.", counter)
-
-# %% [markdown]
 # ### Завдання 6 
 
 # %% [markdown]
